@@ -1,0 +1,78 @@
+#!/usr/bin/python 
+import os, sys, gtk, gtkmozembed
+
+class Inicio_pichiciego:
+    def __init__(self, parent = None):        
+        self.parent = gtk.Window(gtk.WINDOW_TOPLEVEL)
+
+	# Iconos en la ventana - http://zetcode.com/tutorials/pygtktutorial/firststeps/ 
+	self.parent.set_title("CrytoPichi")
+
+        # Initialize mozembed 
+
+        self.moz = gtkmozembed.MozEmbed() 
+        self.moz.show() 
+
+        print self.parent.get_allocation().height    # returns 1 
+        #self.moz.set_resize_mode(gtk.RESIZE_PARENT)    # tested if this changed something 
+        #self.parent.set_resize_mode(gtk.RESIZE_PARENT)    # tested if this changed something 
+  
+        self.parent.add(self.moz) 
+
+ 	starter = 'core/index.html'
+        cc_path = os.path.dirname(os.path.realpath(__file__))
+        self.cryptocat = os.path.join('file://', cc_path, starter)
+	self.moz.load_url(self.cryptocat)
+        self.parent.show_all() 
+
+        # Connect signals 
+        self.moz.connect('net_stop', self.prepare_screenshot) 
+        self.moz.connect('size-request', self.set_size) 
+        self.moz.connect('size-allocate', self.set_size) 
+	self.parent.connect('delete_event', self.close_application) # evento de cerrar la ventana
+	self.parent.connect('key_press_event', on_key_press)
+
+    def prepare_screenshot(self, data = None):    # 'Page loaded' 
+        sys.stdout.flush()	#dump de las llaves
+
+    def set_size(self, width, height): 
+        print 'width: %d   height: %d'% (640, 480) 
+        #print height # the height-parameter is a gtkmozembed object 
+	print self.moz.window.get_geometry()
+
+    def close_application(self, widget, event, data=None):
+        gtk.main_quit()
+
+
+# shortcuts - http://faq.pygtk.org/index.py?file=faq05.005.htp&req=edit
+def on_key_press(widget, event):
+   keyname = gtk.gdk.keyval_name(event.keyval)
+   print "Key %s (%d) was pressed" % (keyname, event.keyval)
+   if event.keyval==65480:
+	if widget.fullscreen==0:
+		# quitar el fullscreen
+		widget.window.unfullscreen()
+		widget.fullscreen=1
+	else:
+		widget.window.fullscreen()
+		widget.fullscreen=0
+   if event.state & gtk.gdk.CONTROL_MASK:
+ 	   print "Control was being held down"
+	   #if event.keyval==114:
+		# moz.load_url(url)
+		# refrescar
+	   if event.keyval==113:
+		 gtk.main_quit()
+	   #if event.keyval==108:
+		#create_screenshot(widget)
+	   if event.keyval==102:
+		print "buscar"
+   if event.state & gtk.gdk.MOD1_MASK:
+     print "Alt was being held down"
+   if event.state & gtk.gdk.SHIFT_MASK:
+     print "Shift was being held down"
+
+stdin=0
+fullscreen=0
+Inicio_pichiciego() 
+gtk.main()

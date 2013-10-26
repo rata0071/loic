@@ -1,0 +1,5 @@
+content loic chrome/content/
+overlay chrome://browser/content/browser.xul chrome://loic/content/browser.xul
+locale loic en-US locale/en-US/
+skin loic classic/1.0 skin/
+style chrome://global/content/customizeToolbar.xul chrome://loic/skin/skin.css

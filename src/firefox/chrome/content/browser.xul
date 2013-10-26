@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://loic/skin/skin.css" type="text/css"?> 
+<!DOCTYPE loic SYSTEM "chrome://loic/locale/translations.dtd">
+<overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+		<script type="text/javascript" src="loic.js" />
+		
+		<menupopup id="menu_ToolsPopup"> 
+			<menuitem label="loic" key="loicRunKey" oncommand="loic.run()"/> 
+		</menupopup>
+		
+		<keyset>
+			<key id="loicRunKey" modifiers="alt shift" key="C" oncommand="loic.run()"/>
+		</keyset>
+		
+		<addonbar id="status-bar">
+			<statusbarpanel id="loicStatusbarIcon" class="statusbarpanel-iconic" src="chrome://loic/skin/bar.png" tooltiptext="&openloic;" onclick="loic.run()" />
+		</addonbar>
+		
+		<toolbarpalette id="BrowserToolbarPalette">
+			<toolbarbutton id="loicToolbarButton" label="loic" tooltiptext="&openloic;" oncommand="loic.run()"/>
+		</toolbarpalette>
+		
+		<vbox id="appmenuSecondaryPane">
+			<menuitem id="loicMenuItem"
+				label="loic"
+				accesskey="loicRunKey"
+				oncommand="loic.run()"
+				insertafter="appmenu_addons" 
+				class="menuitem-iconic"
+				image="chrome://loic/skin/menu.png" />
+		</vbox>
+</overlay>
