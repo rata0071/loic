@@ -1,48 +1,25 @@
-html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6{
+html, body, form, fieldset, p, div, table, td, tr {
 	margin:0;
 	padding:0;
 }
 
 body{
 	background:#0C1820;
-	background-image:url(../img/lowc.png);
-	background-repeat:no-repeat;
-	background-attachment:scroll;
-	background-position:top center;
-	color:#ADD8E6;
-	font-family:Helvetica;
-	font-size:16px;
+	color:#fefefe;
+	font-family: sans;
+	font-size:12px;
 }
 
 input{
-	width:250px;
+	width:25%;
 	height:30px;
-	font-size:20px;
-	font-weight:bold;
 }
 
-h1{
-	font-size:45px;	
-}
-
-h2{
-	font-size:20px;
-	color:#BBBBBB;
-}
 
 legend{
 	text-align:left;
 	color:#ADD8E6;
-	font-size:16px;
-}
-
-#header{
-	text-align:center;
-	background:transparent;
-	color:#2A7A95;
-	font-weight:bold;
-	margin:10px;
-	padding:10px;
+	font-size:14px;
 }
 
 #table1{
@@ -50,7 +27,6 @@ legend{
 }
 
 #layer1{
-	background:#0C1820;
 	padding-top:20px;
 	overflow:auto;
 	text-align:center;
@@ -63,13 +39,12 @@ legend{
 	border-width:1px;
 	border-color:#646464;
 	width:50%;
-	margin-bottom:7px;
 }
 
 #start{
 	color:#ffffff;
 	background:#204060;
-	width:250px;
+	width:50%;
 	height:70px;
 	border-style:solid;
 	border-width:2px;
@@ -109,15 +84,18 @@ legend{
 
 #footer{
 	text-align:center;
-	color:#CCCCCC;
 	font-size:10px;
-	font-style:italic;
-	margin-top:0px;
-	padding-top:0px;
+	padding-bottom: 10px;
+}
+
+#number * {
+	font-size: 30px;
+	font-weight:bold;
 }
 
 #counter_tail{
 	color:#08738B;
+	font-size:24px;
 }
 
 #counter_requested{
@@ -125,14 +103,12 @@ legend{
 	font-family:Helvetica;
 	font-size:47px;
 	font-weight:bold;
-	padding-bottom:0px;
-	margin-bottom:0px;
 }
 
 #radio1{
 	color:#ffffff;
 	background:#204060;
-	width:250px;
+	width:25%;
 	height:30px;
 	border-style:solid;
 	border-width:2px;
@@ -142,7 +118,7 @@ legend{
 #radio2{
 	color:#ffffff;
 	background:#204060;
-	width:250px;
+	width:25%;
 	height:30px;
 	border-style:solid;
 	border-width:2px;
@@ -170,9 +146,10 @@ legend{
 	color:#ADD8E6;
 	font-size:16px;
 	font-weight:bold;
-	padding:10px;
+	padding:5px;
 }
 
 .hidde{
 	display:none;
 }
+

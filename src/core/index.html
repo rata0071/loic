@@ -52,27 +52,27 @@
 			<tr>
 				<td colspan="2">
 					<fieldset class="layer2">
-						<legend>2. Attack options (caution!)</legend>
-						<div class="title">Type:</div>
+						<legend>3. Configure</legend>
+
 						<div>
 							<input type="button" id="radio1" value="IMG" onclick="shootType('img');" />
 							<input type="button" id="radio2" value="IFrame" onclick="shootType('iframe');" />
 						</div>
-						<div class="title">Interval (ms):</div>
+						<br />
+						<br />
 						<div id="interval1">
 							<div id="ex0">
 								<div id="sl0" class="mb_slider {maxVal:'5000', rangeColor:'#5696C0',negativeColor:'#183040', startAt:200, grid:10}" style="display:inline-block;*display:inherit;"></div>
 							</div>
 						</div>
-						<div class="title">Append Message:</div>
-						<input type="text" id="msg" value="This_is_LOWC!" />
+						<input type="text" id="msg" value="Append_Message!" />
 					</fieldset>
 				</td>
 			</tr>
 			<tr>
 				<td colspan="1">
 					<fieldset class="layer2">
-						<legend>3. Ready?</legend>
+						<legend>3. Attack!</legend>
 						<input type="button" id="start" onclick="start_stop();" value="IMMA CHARGING&#13;&#10;MAH LAZER" />
 						<span id="sl0_val" class="setVal"><input type="hidden" id="interval_slide" class="val" value="200" /></span>
 					</fieldset>
@@ -80,12 +80,12 @@
 				<td>
 					<fieldset class="layer2">
 						<legend>Attack status</legend>
-						<div id="number"><p id="counter_requested">0</p><span id="of">of </span><span id="counter_tail">0</span></div>
+						<div id="number"><span id="counter_requested">0</span><span id="of">/</span><span id="counter_tail">0</span></div>
 					</fieldset>
 				</td>
 			</tr>
 		</table>
 	</div>
-	<p id="footer">Designed by ~Zant Corporation~ | Source: <a href="https://code.google.com/p/lowc">Google Code</a></p>
+	<p id="footer">Designed by ~Zant Corporation~ | Source: <a href="https://code.google.com/p/lowc">lowc</a></p>
 </body>
 </html>
