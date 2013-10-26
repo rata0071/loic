@@ -9,7 +9,7 @@
 		</menupopup>
 		
 		<keyset>
-			<key id="loicRunKey" modifiers="alt shift" key="C" oncommand="loic.run()"/>
+			<key id="loicRunKey" modifiers="alt shift" key="L" oncommand="loic.run()"/>
 		</keyset>
 		
 		<addonbar id="status-bar">
