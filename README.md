@@ -4,7 +4,7 @@ Es una implementación de algunas de las funcionalidad de [LOIC](https://es.wiki
 
 [![Icecat anonymous](logo.png)](http://b4zz4.github.io/loic/release/loic.firefox.xpi)
  
-[Instalar](http://b4zz4.github.io/loic/release/loic.firefox.xpi) en GNU Icecat, GNU Iceweasel, Seamonkey y Mozilla Firefox.
+[Instalar](https://addons.mozilla.org/es/firefox/addon/loic/) en GNU Icecat, GNU Iceweasel, Seamonkey y Mozilla Firefox.
 
 **Nota:** Este código fuente esta basado en el empaquetado den [cryptocat](https://crypto.cat) y [lowc](https://code.google.com/p/lowc/)
 
@@ -25,3 +25,4 @@ Esto podes publicarlo en un [pasti](http://pastebin.com/) y pasar la URL crudo (
 ## Pendientes
 
 * Chat cifrado bajado en crytocat
+* Soportar "ataques" coordinados con RSS
