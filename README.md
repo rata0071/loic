@@ -8,7 +8,7 @@ Es una implementación de algunas de las funcionalidad de [LOIC](https://es.wiki
 
 **Nota:** Este código fuente esta basado en el empaquetado den [cryptocat](https://crypto.cat) y [lowc](https://code.google.com/p/lowc/)
 
-## Enjambre (Hive Ming)
+## Enjambre (HiveMind)
 
 Esta opción esta pensada para coordinar ataques entre varias personas, originalmente suelen hacerse con [RSS](https://es.wikipedia.org/wiki/Rss) pero esto todavía no esta soportado por este plugin.
 
