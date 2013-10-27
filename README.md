@@ -8,6 +8,20 @@ Es una implementación de algunas de las funcionalidades de [LOIC](https://es.wi
 
 **Nota:** Este código fuente esta basado en el empaquetado den [cryptocat](https://crypto.cat) y [lowc](https://code.google.com/p/lowc/)
 
+## Enjambre (Hive Ming)
+
+Esta opción esta ensada para coordinar ataques entre varias personas, originalmente suelen hacerse con [RSS](https://es.wikipedia.org/wiki/Rss) pero esto todavia no esta soportado por este plugin.
+
+~~~
+var info = ({
+  "target": "http://www.example.com/", //Obejtivo URL (con "http://").
+  "msg": "LOWC - Test tool", //Mensaje.
+  "status": "stop" //Estado del ataque ("start" o "stop").
+})
+~~~
+
+Esto podes publicarlo en un [pasti](http://pastebin.com/) y pasar la URL crudo (raw).
+
 ## Pendientes
 
 * Documentación de Inteligencia de emjambe
