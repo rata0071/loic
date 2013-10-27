@@ -1,6 +1,6 @@
 #LOIC
 
-Es una implementación de algunas de las funcionalidades de [LOIC](https://es.wikipedia.org/wiki/Low_Orbit_Ion_Cannon) realizadas en lenguaje JavaScript, lo cual permite ejecutarlo desde un navegador web.
+Es una implementación de algunas de las funcionalidad de [LOIC](https://es.wikipedia.org/wiki/Low_Orbit_Ion_Cannon) realizadas en lenguaje JavaScript, lo cual permite ejecutarlo desde un navegador web.
 
 [![Icecat anonymous](logo.png)](http://b4zz4.github.io/loic/release/loic.firefox.xpi)
  
@@ -10,7 +10,7 @@ Es una implementación de algunas de las funcionalidades de [LOIC](https://es.wi
 
 ## Enjambre (Hive Ming)
 
-Esta opción esta ensada para coordinar ataques entre varias personas, originalmente suelen hacerse con [RSS](https://es.wikipedia.org/wiki/Rss) pero esto todavia no esta soportado por este plugin.
+Esta opción esta pensada para coordinar ataques entre varias personas, originalmente suelen hacerse con [RSS](https://es.wikipedia.org/wiki/Rss) pero esto todavía no esta soportado por este plugin.
 
 ~~~
 var info = ({
@@ -24,5 +24,4 @@ Esto podes publicarlo en un [pasti](http://pastebin.com/) y pasar la URL crudo (
 
 ## Pendientes
 
-* Documentación de Inteligencia de emjambe
 * Chat cifrado bajado en crytocat
