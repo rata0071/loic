@@ -4,7 +4,7 @@ html, body, form, fieldset, p, div, table, td, tr {
 }
 
 body{
-	background:#0C1820;
+	background: #091720;
 	color:#fefefe;
 	font-family: sans;
 	font-size:12px;
@@ -153,3 +153,12 @@ legend{
 	display:none;
 }
 
+
+fieldset, buttom, input[type="button"], input[type="submit"] {
+	border-radius: 10px;
+	background: #152B39;
+}
+
+#interval1 {
+margin-top: 32px;
+}
