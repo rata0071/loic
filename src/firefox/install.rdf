@@ -4,7 +4,7 @@
 	<Description about="urn:mozilla:install-manifest">
 		<em:id>bazza@riseup.net</em:id>
 		<em:name>LOIC</em:name>
-		<em:version>0.1</em:version>
+		<em:version>0.1.1</em:version>
 		<em:type>2</em:type>
 		<em:creator>bazza@riseup.net</em:creator>
 		<em:description>Somos anonymous, somos legión.</em:description>

@@ -13,7 +13,7 @@
 		</keyset>
 		
 		<addonbar id="status-bar">
-			<statusbarpanel id="loicStatusbarIcon" class="statusbarpanel-iconic" src="chrome://loic/skin/bar.png" tooltiptext="&openloic;" onclick="loic.run()" />
+			<statusbarpanel id="loicStatusbarIcon" class="statusbarpanel-iconic" src="chrome://loic/content/data/img/icon-16.png" tooltiptext="&openloic;" onclick="loic.run()" />
 		</addonbar>
 		
 		<toolbarpalette id="BrowserToolbarPalette">
@@ -22,11 +22,11 @@
 		
 		<vbox id="appmenuSecondaryPane">
 			<menuitem id="loicMenuItem"
-				label="loic"
+				label="LOIC"
 				accesskey="loicRunKey"
 				oncommand="loic.run()"
 				insertafter="appmenu_addons" 
 				class="menuitem-iconic"
-				image="chrome://loic/skin/menu.png" />
+				image="chrome://loic/content/data/img/icon-16.png" />
 		</vbox>
 </overlay>
