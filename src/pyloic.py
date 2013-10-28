@@ -26,10 +26,10 @@ class Cryptocat:
         #settings.set_property('enable-webaudio', True)
         # Set default encoding
         settings.set_property('default-encoding', 'utf-8')
-        self.window.set_title('pyCryptocat')
+        self.window.set_title('pyLOIC')
         self.window.connect('destroy', gtk.main_quit)
 
-        icon_path = cc_path + '/core/img/cryptocat.png'
+        icon_path = cc_path + '/core/img/icon-128.png'
         self.window.set_icon_from_file(icon_path)
 
         self.window.add(self.webview)

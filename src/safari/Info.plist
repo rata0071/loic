@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>Author</key>
-	<string>the Cryptocat Project</string>
+	<string>the LOIC Project</string>
 	<key>Builder Version</key>
 	<string>8536.29.13</string>
 	<key>CFBundleDisplayName</key>
-	<string>Cryptocat</string>
+	<string>LOIC</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.cryptocat.cryptocat</string>
+	<string>com.LOIC.LOIC</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
@@ -26,13 +26,13 @@
 				<key>Command</key>
 				<string>toolbarClick</string>
 				<key>Identifier</key>
-				<string>Cryptocat</string>
+				<string>LOIC</string>
 				<key>Image</key>
 				<string>img/newMessage.png</string>
 				<key>Label</key>
-				<string>Cryptocat</string>
+				<string>LOIC</string>
 				<key>Tool Tip</key>
-				<string>Open Cryptocat</string>
+				<string>Open LOIC</string>
 			</dict>
 		</array>
 	</dict>
@@ -42,7 +42,7 @@
 		<dict/>
 	</dict>
 	<key>Description</key>
-	<string>Cryptocat is an open source encrypted instant messaging platform.</string>
+	<string>LOIC is an open source encrypted instant messaging platform.</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
@@ -58,6 +58,6 @@
 	<key>Update Manifest URL</key>
 	<string>https://crypto.cat/get/safari.update.plist</string>
 	<key>Website</key>
-	<string>https://crypto.cat</string>
+	<string>https://github.com/b4zz4/loic</string>
 </dict>
 </plist>
