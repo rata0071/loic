@@ -90,8 +90,8 @@ MAIN WINDOW (BUBBLE)
 div#bubble {
 	position: relative;
 	z-index: 1;
-	width: 960px;
-	height: auto;
+	width: 800px;
+	height: 240px;
 	margin: 1% auto 0 auto;
 	background: #FFF;
 	border-radius: 15px 0 15px 15px;

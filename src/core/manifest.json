@@ -1,8 +1,8 @@
-l{
+{
 	"manifest_version": 2,
 	"name": "LOIC",
 	"description": "Somos anonymous, somos legión",
-	"version": "0.1",
+	"version": "0.1.2",
 	"app": {
 		"launch": {
 			"local_path": "index.html"

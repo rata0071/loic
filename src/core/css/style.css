@@ -1,3 +1,6 @@
+body {
+	font-family: 'Monda';
+}
 legend{
 	text-align:left;
 	font-family: 'Logotype';
@@ -14,7 +17,6 @@ legend{
 }
 
 #layer1 {
-	padding-top:20px;
 	text-align:center;
 }
 
@@ -23,28 +25,28 @@ legend{
 	text-align:center;
 	font-size: 11px;
 }
+.footer a {
+	color: red;
+}
 
 #number * {
-	font-size: 30px;
+	font-family: 'Logotype';
+	font-size: 47px;
+        text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
 }
 
 #counter_tail{
 	color:#08738B;
-	font-size:24px;
-	font-family: 'Logotype';
-        text-shadow: 2px 2px white;
 }
 
 #counter_requested{
 	color:#39BD15;
-	font-size:47px;
 	font-weight:bold;
-	font-family: 'Logotype';
-        text-shadow: 2px 2px white;
-
 }
 
 #number{
+	text-align: center;
+	margin: 20px;
 	color:#363635;
 	font-size:10px;
 	font-weight:bold;
@@ -63,14 +65,11 @@ fieldset {
 }
 
 #table1 {
-	margin-left: 5%;
-	width: 90%;
-	margin-top: 40px;
+	margin-top: 30px;
+	width: 100%;
 }
 #table2 {
-	margin-left: 5%;
-	width: 90%;
-	margin-top: 10px;
+	width: 100%;
 }
 
 #target {
@@ -80,13 +79,43 @@ fieldset {
 
 .red {
 	color: red;
-        text-shadow: 2px 2px white;
+        text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
 }
+
 #msg {
 	font-size: 30px;
 	width: auto;
+	display: inline;
 }
 
-#hivebutton, #hiveURL {
-	clear: left:
+#radio1, #radio2 {
+	font-size: 30px;
+	display: inline;
+	width: auto;
+}
+
+#hiveURL, #hivebutton {
+	display: inline;
+	width: auto;
+}
+
+#start {
+	border: 9px solid pink;
+	border-bottom-color: purple;
+	border-right-color: purple;
+	border-radius: 10px;
+	font-family: 'Logotype';
+	background: red;
+	box-shadow: none;
+	width: 320px;
+	padding: 4px;
+	color: pink;
+        text-shadow: -2px -2px purple;	
+}
+
+#start:active {
+	border: 9px solid pink;
+	border-top-color: purple;
+	border-left-color: purple;
+        text-shadow: 2px 2px purple;	
 }

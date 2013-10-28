@@ -12,6 +12,7 @@
 	<title>LOWC (Low Orbit Web Cannon)</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="img/icon-48.png" media="all" rel="icon" type="image/x-icon" />
+	<link href="css/nuevo.css" media="all" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
 	<link href="css/mb.slider.css" media="all" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="js/jquery.js"></script>
@@ -31,58 +32,55 @@
 	<div id="frameContainer" class="hidde"></div>
 	<div id="imgContainer" class="hidde"></div>
 	<div id="typeStyle" class="hidde"></div>
-	<div id="layer1">
+	<div id="bubble">
 		<table id="table1">
 			<tr>
-				<td>
-					<fieldset class="layer2">
-						<legend>1. Select your target</legend>
+				<td valign="top" align="center" >
+					<legend>Select your target</legend>
+					<div>
 						<input type="text" id="target" value="http://" onfocus="erase('#target');" onblur="reload('#target');httpValue();"/>
-					</fieldset>
-				</td>
-				<td>
-					<fieldset class="layer2">
-						<legend>HiveMind (optional)</legend>
-						<input type="button" id="hivebutton" value="Connect" onclick="hive();"/>
+					</div>
+				</td><td valign="top" align="center" >
+					<legend>HiveMind (optional)</legend>
+					<div>
 						<input type="text" id="hiveURL"  value="http://" onfocus="erase('#hiveURL');" onblur="reload('#hiveURL');httpValue();"/>
-					</fieldset>
+						<input type="button" id="hivebutton" value="Connect" onclick="hive();"/>
+					</div>
 				</td>
 			</tr>
 			<tr>
-				<td colspan="2">
-					<fieldset class="layer2">
-						<legend>3. Configure</legend>
-
-						<div>
-							<input type="button" id="radio1" value="IMG" onclick="shootType('img');" />
-							<input type="button" id="radio2" value="IFrame" onclick="shootType('iframe');" />
-						</div>
-						<div id="interval1">
-							<div id="ex0">
-								<div id="sl0" class="mb_slider {maxVal:'5000', rangeColor:'#5696C0',negativeColor:'#183040', startAt:200, grid:10}" style="display:inline-block;*display:inherit;"></div>
-							</div>
-						</div>
-						<input type="text" id="msg" value="Append_Message!" />
-					</fieldset>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="1">
-					<fieldset class="layer2">
-						<legend>3. Attack!</legend>
-						<input type="button" id="start" onclick="start_stop();" value="IMMA CHARGING&#13;&#10;MAH LAZER" />
-						<span id="sl0_val" class="setVal"><input type="hidden" id="interval_slide" class="val" value="200" /></span>
-					</fieldset>
-				</td>
 				<td>
-					<fieldset class="layer2">
-						<legend>Attack status</legend>
-						<div id="number"><span id="counter_requested">0</span><span id="of">/</span><span id="counter_tail">0</span></div>
-					</fieldset>
+				<br />
+				</td>			
+			</tr>
+			<tr>
+				<td colspan="2" align="center" >
+					<input type="text" id="msg" value="Append_Message!" />
+					<input type="button" id="radio1" value="IMG" onclick="shootType('img');" />
+					<input type="button" id="radio2" value="IFrame" onclick="shootType('iframe');" />
+					<div id="interval1">
+						<div id="ex0">
+							<div id="sl0" class="mb_slider {maxVal:'5000', rangeColor:'#5696C0',negativeColor:'#183040', startAt:200, grid:10}" style="display:inline-block;*display:inherit;"></div>
+						</div>
+					</div>
 				</td>
 			</tr>
 		</table>
+		<div id="footer">
+		<table id="table2">
+			<tr>
+				<td align="center">
+					<input type="button" id="start" onclick="start_stop();" value="IMMA CHARGING&#13;&#10;MAH LAZER" />
+					<span id="sl0_val" class="setVal"><input type="hidden" id="interval_slide" class="val" value="200" /></span>
+				</td>
+				<td align="center">
+					<div id="number"><span id="counter_requested">0</span><span id="of">:</span><span id="counter_tail">0</span></div>
+					<legend class="red" >Attack status</legend>
+				</td>
+			</tr>
+		</table>
+		</div>
 	</div>
-	<p id="footer">Designed by ~<a href="https://code.google.com/p/lowc">Zant Corporation</a>~ | <a href="https://github.com/b4zz4/loic">loic addons</a></p>
+	<p class="footer">Designed by ~<a href="https://code.google.com/p/lowc">Zant Corporation</a>~ | <a href="https://github.com/b4zz4/loic">loic addons</a></p>
 </body>
 </html>

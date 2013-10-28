@@ -2,7 +2,6 @@ var loic = function() {
 	Components.utils.import("resource://gre/modules/Services.jsm");
 	Components.utils.import('resource://gre/modules/ctypes.jsm');
 	var prefsService = Services.prefs;
-	var loicRandom = Components.utils.import('chrome://loic/content/generateRandomBytes.jsm');
 	return {
 		init: function() {
 			var firstRun = prefsService.getBoolPref('extensions.loic.firstRun');
@@ -20,17 +19,6 @@ var loic = function() {
 			window.addEventListener('loicGenerateRandomBytes', function(evt) {
 				loic.generateRandomBytes(evt)
 			}, false, true);
-		},
-		generateRandomBytes: function(evt) {
-			try {
-				loicRandom.WeaveCrypto.initNSS(ctypes.libraryName('nss3'));
-			}
-			catch(err) {
-				loicRandom.WeaveCrypto.path = Services.dirsvc.get('GreD', Ci.nsIFile);
-				loicRandom.WeaveCrypto.path.append(ctypes.libraryName('nss3'));
-				loicRandom.WeaveCrypto.initNSS(WeaveCrypto.path.path);
-			}
-			evt.target.setAttribute('randomValues', loicRandom.WeaveCrypto.generateRandomBytes(40));
 		}
 	};
 }();
