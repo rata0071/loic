@@ -1,7 +1,6 @@
 .DS_Store
 src/cryptocat.safariextension/*
 src/mac/htdocs/*
-release/
 
 # npm
 node_modules/
