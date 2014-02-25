@@ -5,7 +5,7 @@
 Es una implementación de algunas de las funcionalidad de [LOIC](https://es.wikipedia.org/wiki/Low_Orbit_Ion_Cannon) realizadas en lenguaje JavaScript, lo cual permite ejecutarlo desde un navegador web.
 
 ![Captura de pantalla](captura.png)
-[Instalar](https://addons.mozilla.org/es/firefox/addon/loic/) en GNU Icecat, GNU Iceweasel, Seamonkey y Mozilla Firefox.
+[Instalar](loic/blob/master/release/loic.firefox.xpi?raw=true) en GNU Icecat, GNU Iceweasel, Seamonkey y Mozilla Firefox.
 
 **Nota:** Este código fuente esta basado en el empaquetado den [cryptocat](https://crypto.cat) y [lowc](https://code.google.com/p/lowc/)
 
@@ -20,7 +20,6 @@ var info = ({
   "status": "stop" //Estado del ataque ("start" o "stop").
 })
 ~~~
-
 Esto podes publicarlo en un [pasti](http://pastebin.com/) y pasar la URL crudo (raw).
 
 ## Parametros
