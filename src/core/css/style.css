@@ -16,6 +16,11 @@ legend{
         -moz-user-select: none;
 }
 
+#sl0 { 
+  background: transparent url("../img/chargin.png") repeat-y scroll 0 0;
+  border-radius: 10px;
+}
+
 #layer1 {
 	text-align:center;
 }
