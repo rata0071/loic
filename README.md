@@ -21,12 +21,13 @@ var info = ({
 })
 ~~~
 Esto podes publicarlo en un [pasti](http://pastebin.com/) y pasar la URL crudo (raw).
+
 ## Parametros
 
 Podes predefinir el target, el hive o el mensaje con parametros
 
 ~~~
-url.al/pluggin/index.html?t=google.com&msg=Por%20Gatos!&h=hive.fake.com
+chrome://loic/content/data/index.html?t=google.com&msg=Por%20Gatos!&h=hive.fake.com
 ~~~
 
 ## Pendientes
