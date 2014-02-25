@@ -1,11 +1,42 @@
 //Variables globales.
-//NOTA: mala costumbre que hay que corregir...
+//NOTA: mala costumbre que hay que corregir... 
 var fireInterval;
 var shootID;
 var typeValue = 'img';
 var state = 'stop';
 var shootRequest = {};
+var params = getSearchParameters();
 
+function loadParams() {
+  if ( typeof(params.t) != 'undefined' ) {
+    $("#target").val(params.t);
+    reload('#target');
+    httpValue();
+  }
+  if ( typeof(params.h) != 'undefined' ) {
+    $("#hiveURL").val(params.h);
+    reload('#hiveURL');
+    httpValue();
+  }
+  if ( typeof(params.msg) != 'undefined' ) {
+    $("#msg").val(decodeURIComponent(params.msg));
+  }
+}
+
+function getSearchParameters() {
+      var prmstr = window.location.search.substr(1);
+      return prmstr != null && prmstr != "" ? transformToAssocArray(prmstr) : {};
+}
+
+function transformToAssocArray( prmstr ) {
+    var params = {};
+    var prmarr = prmstr.split("&");
+    for ( var i = 0; i < prmarr.length; i++) {
+        var tmparr = prmarr[i].split("=");
+        params[tmparr[0]] = tmparr[1];
+    }
+    return params;
+}
 
 //Modifica la URL para que tenga "http://" al principio.
 function httpValue(){
@@ -112,7 +143,7 @@ var shoot2 = function () {
 //Invoca un intervalo de la variable de ataque deseada.
 function preshoot(interval){
 	if (typeValue == 'img'){
-		clearInterval(ireInterval);
+		clearInterval(fireInterval);
 		fireInterval = setInterval(shoot1,interval)
 	}
 	else {
