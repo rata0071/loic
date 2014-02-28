@@ -1,6 +1,6 @@
-#LOIC
+# LOIC 
 
-[![Icecat anonymous](logo.png)](http://b4zz4.github.io/loic/release/loic.firefox.xpi)
+** Clickea en el [![Icecat anonymous](logo.png)](http://b4zz4.github.io/loic/release/loic.firefox.xpi) para instalar LOIC **
 
 Es una implementación de algunas de las funcionalidad de [LOIC](https://es.wikipedia.org/wiki/Low_Orbit_Ion_Cannon) realizadas en lenguaje JavaScript, lo cual permite ejecutarlo desde un navegador web.
 
