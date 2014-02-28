@@ -1,6 +1,6 @@
 # LOIC 
 
-** Clickea debajo para instalar LOIC **
+**Clickea debajo para instalar LOIC**
 
 [![Icecat anonymous](logo.png)](http://b4zz4.github.io/loic/release/loic.firefox.xpi) 
 
