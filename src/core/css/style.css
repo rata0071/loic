@@ -72,6 +72,7 @@ fieldset {
 #table1 {
 	margin-top: 30px;
 	width: 100%;
+  background: url("https://github.com/b4zz4/loic/raw/master/logo.png") no-repeat scroll center center rgba(0, 0, 0, 0)
 }
 #table2 {
 	width: 100%;
